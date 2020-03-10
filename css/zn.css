@@ -1,0 +1,417 @@
+body{min-width: 1340px;}
+/*顶部*/
+.top-nav {
+    background: #0a0b08
+}
+
+.nav-wrap {
+    width: 1000px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0px auto;
+}
+
+.logo {
+    display: block;
+    width: 170px;
+    height: 60px;
+    background: url("../img/logo.png") no-repeat;
+    float: left;
+}
+
+.nav-list {
+    float: right;
+}
+
+.nav-list li {
+    float: left;
+}
+
+.nav-list li a {
+    font-size: 16px;
+    color: #01a6de;
+    display: block;
+    height: 60px;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.nav-list li a:hover::after {
+    content: " ";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: #f29400;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+}
+
+.nav-list li a:hover::before {
+    content: " ";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #f29400;
+    position: absolute;
+    top: 50px;
+    left: 43%;
+}
+
+/*banner*/
+.banner {
+    background: url("../img/zngj.png") no-repeat center;
+    position: relative;
+}
+
+/*common*/
+.banner-wrap, .zn-wrap, .anli-wrap, .zc-wrap, .qy-wrap, .jm-wrap, .lx-wrap {
+    width: 1000px;
+    height: 540px;
+    margin-left: auto; /*左边距自动适应*/
+    margin-right: auto; /*右边距自动适应*/
+}
+
+.banner-wrap {
+    overflow: hidden;
+}
+
+.ckxx {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background: #f29400;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 210px;
+    left: 174px;
+}
+
+/*智能家居*/
+.zn-wrap {
+    overflow: hidden;
+}
+
+.text-cont h3 {
+    font-size: 30px;
+    color: #0a0b08;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.text-cont p:nth-child(2) {
+    font-size: 18px;
+    color: #999999;
+    text-align: center;
+}
+
+.text-cont a {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: #f5ab37;
+    margin-top: 10px;
+}
+
+.text-cont p:nth-child(4) {
+    width: 450px;
+    margin: 0px auto;
+    font-size: 12px;
+    color: #999999;
+    line-height: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img-cont {
+    margin-top: 90px;
+}
+
+.zn-icon {
+    width: 130px;
+    background: url("../img/zqdn.png") no-repeat;
+    text-align: center;
+    padding-top: 160px;
+    float: left;
+    margin-right: 160px;
+}
+
+.no-margin {
+    margin-right: 0px
+}
+
+/*案例展示*/
+.anli {
+    background: url("../img/albj.png") no-repeat center;
+}
+
+.anli-wrap {
+    overflow: hidden;
+}
+
+.anli .anli-wrap .al-text h3 {
+    color: #ffffff;
+}
+
+.anli-img {
+    margin-top: 20px;
+}
+
+.anli-img li {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*致创能源*/
+.zc-wrap .zc-text p:nth-child(4) {
+    width: 600px;
+}
+
+.zc {
+    background: url("../img/zcny.png") no-repeat center;
+}
+
+/*前沿资讯*/
+.qy {
+    background: url("../img/qyzx.jpg") no-repeat center;
+}
+
+.qy-wrap {
+    overflow: hidden;
+}
+
+.qy .qy-wrap .qy-text h3 {
+    color: #ffffff;
+}
+
+.qy-wrap .qy-text p:nth-child(4) {
+    color: #ffffff;
+}
+
+.qy-cont {
+    margin-top: 50px;
+}
+
+.qy-cont .qy-left, .qy-cont .qy-right {
+    width: 460px;
+    float: left;
+}
+
+.qy-cont .qy-left .left-text {
+    text-align: right;
+    margin-top: 72px;
+}
+
+.left-text h4 {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.left-text p {
+    width: 460px;
+    color: #dddddd;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.qy-right {
+    margin-left: 80px;
+}
+
+.qy-right .right-text {
+    margin-bottom: 72px;
+}
+
+/*加盟合作*/
+.jm {
+    background: url("../img/jmhz.jpg") no-repeat center;
+    overflow: hidden;
+}
+
+.jm-wrap {
+    overflow: visible;
+    position: relative;
+}
+
+/*动画部分*/
+@keyframes dh {
+    from {
+        transform: scale(0)
+    }
+    /*scale(0)缩放倍率为0即缩小0倍*/
+    to {
+        transform: scale(1.5)
+    }
+    /*scale(1.5)放大1.5倍*/
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 10px blue; /*阴影的x轴，阴影的y轴，阴影的模糊值，阴影的颜色*/
+    border-radius: 50%;
+    position: absolute;
+    top: 147px;
+    left: -32px;
+    animation: dh 1s infinite;
+}
+
+/*联系我们*/
+.lx {
+    background: url("../img/lxwm.jpg") no-repeat center;
+}
+
+.lx-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.lx .lx-wrap .lx-text h3 {
+    color: #ffffff;
+}
+
+.lx-wrap .lx-text p:nth-child(4) {
+    color: #ffffff;
+}
+
+.lx-wrap .lx-form {
+    float: left;
+}
+
+.lx-form {
+    width: 455px;
+    height: 300px;
+    position: absolute;
+    top: 216px;
+    left: 12px;
+}
+
+.lx-form p {
+    width: 455px;
+    height: 42px;
+    line-height: 42px;
+    background: #5bb3e2;
+    margin-bottom: 1px;
+}
+
+.lx-form p:hover {
+    background: #ffffff;
+}
+
+.lx-wrap .lx-form label {
+    display: inline-block;
+    width: 100px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.lx-wrap .lx-form:hover label {
+    color: gray;
+}
+
+.lx-form input[type="text"] {
+    width: 350px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.lx-wrap .lx-form .phone {
+    width: 120px;
+    text-indent: 4px;
+}
+
+#dh, #xq {
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.lx-form .xuqiu {
+    height: 129px;
+}
+
+.lx-wrap .lx-form {
+    line-height: 42px;
+}
+
+.lx-form .tj {
+    text-align: center;
+}
+
+.lx-form input[type="submit"] {
+    width: 350px;
+    height: 40px;
+    background: transparent;
+    font-size: 16px;
+    color: #ffffff;
+    letter-spacing: 5px;/*字体间距*/
+    outline: none;
+    border: none;
+}
+
+.lx-form .tj:hover {
+    background: #f29400;
+}
+
+.lx-wrap .lx-info {
+    float: right;
+}
+
+.lx-info {
+    width: 455px;
+    height: 300px;
+    position: absolute;
+    top: 216px;
+    left: 548px;
+}
+
+.lx-info p {
+    width: 455px;
+    height: 42px;
+    background: transparent;
+    font-size: 12px;
+    color: #e5e5e5;
+    margin-bottom: 1px;
+}
+
+.lx-wrap .lx-info .dizhi {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: #5bb3e2;
+    font-size: 25px;
+    text-align: center;
+    line-height: 42px;
+}
+
+.lx-wrap .lx-info .rx {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+    /*footer*/
+.footer {
+    background: url("../img/foot.jpg") no-repeat center;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #ffffff;
+}
